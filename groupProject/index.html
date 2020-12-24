@@ -9,331 +9,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    
-    <script src="back2Top.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="menu-yijia.css">
+    <link rel="stylesheet" href="yijia.css">
+
+    <script src="yijia.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <title>億家海鮮 YiJia Seafood</title>
+    <title>億家海鮮 YiJia Seafood | Malaysia's Best Chinese Restaurant</title>
 
     <!--css-->
     <style>
-        .wrap{
-            background-image: linear-gradient(to bottom, #2d3e50, #000000);
-        }
-        .navbar-brand {
-            margin-right: 0px;
-        }
-        .navbar-brand img {
-            height: 50px;
-            width: 50px;
-        }
-        .nav-item {
-            font-size: 1.2em;
-            margin: 0 8px 0 15px;
-        }
-        .nav-item a {
-            font-family: 'Sentinel SSm A','Sentinel SSm B';
-            color: #ffffff;
-            transition: 0.4s;
-        }
-        .nav-item a:hover{
-            color: #f3b25d;
-        }
-        nav.navbar {
-            background-image: linear-gradient(to bottom,#930d0d, #630b0b);
-            padding: 0px 16px 0px 16px;
-        }
-        .navbar-brand p {
-            color: #ffffff;
-            font-family: 'Sentinel SSm A','Sentinel SSm B';
-            padding: 12px 5px 2px 0px;
-            margin-bottom: 0px;
-        }
-        .logo{
-            display: block;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
         
-        .header{
-            padding-top: 130px;
-            padding-bottom: 11em;
-            background-image: url('header.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .header-container{
-            margin-right: 4em;
-        }
-        h2{
-            margin-top: 0;
-            margin-bottom: .5rem;
-        }
-        .header-title{
-            font-style: normal;
-            line-height: 1.2;
-            padding-left: 2em;
-        }
-        .display-1{
-            font-family: 'Josefin Sans', sans-serif;
-            font-size: 4.0rem;
-        }
-        .display-2{
-            font-family: 'Josefin Sans', sans-serif;
-            font-size: 2rem;
-        }
-        .nav-link::before {
-            content: "|";
-            display: block;
-            color: #f3b25d;
-            height: 0px;
-            position: relative;
-            left: -16px;
-            width: 1px;
-        }
-        .about{
-            padding: 3em 3em 2em 1em;
-            margin-top: 4.5em;
-        }
-        .about div img {
-            height: auto;
-            width: 100%;
-            max-width: 400px;
-            padding-top: 32px;
-        }
-        .about-text{
-            font-size: .7em;
-            color: white;
-            font-family: Arial,Helvetica,sans-serif;
-            font-weight: thin;
-            margin-bottom: 25px;
-        }
-        .about div h3{
-            color: white;
-            font-family: Arial,Helvetica,sans-serif;
-            font-weight: bold;
-            margin-bottom: 1.8em;
-        }
-        .link-btn{
-            border-radius: 0px;
-            border: 1px white solid;
-            background-color: transparent;
-            color: white;
-            transition: 0.3s;
-        }
-        .link-btn:hover {
-            color: black;
-            background-color: white;
-        }
         
-        header {
-            overflow: hidden;
-        }
-        .menu-pic {
-            float: right;
-            width: 38%;
-            height: auto;
-            display: block;
-            margin-right: 6.5em;
-        }
-        .top-menu{
-            color: white;
-            margin-bottom: 1em;
-            padding-bottom: 3em;
-        }
-        #sliding-popular-menu{
-            margin-top: 3em;
-        }
-        #sliding-popular-menu h3{
-            padding: 0 0 0 3.5em;
-            font-family: Arial,Helvetica,sans-serif;
-            font-weight: bold;
-            font-size: 2rem;
-        }
-        .dish-name{
-            font-family: sans-serif;
-            font-size: 1.8rem;
-        }
-        .carousel-control-prev, .carousel-control-next {
-            transition: .1s;
-        }
-        .dish-explain{
-            padding: 3em 0 0 7em;
-            width: 50%;
-        }
-
-        .promotion{
-            margin-bottom: 20px;
-        }
-        .promo-adjust {
-            margin-left: 8px;
-            margin-right: 8px;
-        }
-        .promotion-img{
-            height: auto;
-            width: 30%;
-        }
-
-        .follow-subscribe{
-            padding-top: 35px;
-            color: white;
-            padding-bottom: 35px;
-        }
-        ul.location_icon {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            float: left;
-        }
-        ul.location_icon li {
-            float: left;
-            height: 70px;
-            color: #fff;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            padding-right: 20px;
-        }
-
-        ul.location_icon li:last-child { 
-            padding-right: 0px; 
-        }
-        
-        ul.location_icon li a {
-            margin-bottom: 23px;
-        }
-        
-        ul.location_icon span {
-            font-size: 17px;
-            font-weight: 400;
-        }
-        .follow-subscribe .Follow {
-            margin-bottom: 27px;
-        }
-        .follow-subscribe .Newsletter  {
-            padding: 13px 26px;
-            padding-top: 10px;
-            padding-right: 26px;
-            padding-bottom: 10px;
-            padding-left: 26px;
-            border: #fff solid 1px;
-            width: 77%;
-        }
-        .follow h3 {
-            color: #fff;
-            font-size: 25px;
-            line-height: 30px;
-            font-weight: 600;
-            border-bottom: #fff solid 1px;
-            border-bottom-width: 1px;
-            border-width: 1px;
-            display: inline-block;
-            padding-bottom: 2px;
-            margin-bottom: 15px;
-        }
-        .Subscribe {
-            padding: 10px 46px;
-            margin-left: -3px;
-            border: #0e0c0c solid 1px;
-            background: #0e0c0c;
-            color: #fff;
-        }
-        .follow-adjust {
-            padding-left: 8em;
-        }
-        #newsletter-subscribe {
-            margin-top: 1em;
-        }
-        #back2top {
-            display: none; /* Hidden by default */
-            position: fixed; /* Fixed/sticky position */
-            bottom: 40px; /* Place the button at the bottom of the page */
-            right: 5px; /* Place the button 30px from the right */
-            z-index: 99; /* Make sure it does not overlap */
-            border: none; /* Remove borders */
-            outline: none; /* Remove outline */
-            padding: 15px 0 15px 15px; /* Some padding */
-            border-radius: 10px; /* Rounded corners */
-            background-color: transparent;
-            height: auto;
-            width: 10%;
-            color: white;
-        }
-        #back2top img{
-            height: auto;
-            width: 35%;
-        }
-        #back2top:hover {
-            opacity: .5;
-        }
-        .footer{
-            padding-top: 5px;
-            padding-bottom: auto;
-        }
-        .copyright {
-            display: inline; float: right;
-            padding-top: 7px;
-            padding-right: 10px;
-        }
     </style>
 </head>
 
 <body>
-    
-    <button onclick="topFunction()" id="back2top" title="Go to top"><img src="back-top-white.png" alt="back-to-top-icon"><br> Back to Top</button>
+    <button onclick="topFunction()" id="back2top" title="Go to top">Top</button>
     <div class="wrap"><!--whole body content-->
 
-        <div class="scroller">
+        
 
-            <nav class="navbar navbar-expand-lg static-top"><!-- Navigation -->
-                <div class="container">
-                    <div class="logo"><!--logo and brand name-->
-                        <a class="navbar-brand" href="#">
-                            <img src="YiJiaLogo.png" alt="YiJiaLogo">
+            <div class="index-header">
+                <div class="topnav" id="myTopnav">
+                    <div class="topnav-group">
+                        <a href="index.html" class="topnav-logo" style="padding: 12px 5px 2px 0px;font-size:20px;margin-left:4%;padding: 0%;font-family: LibreBaskerville;"><img src="YiJiaLogo.png" alt="YiJiaLogo" 
+                             style="max-width: 45px; max-height: 45px;"/><span>億家海鮮 Yi Jia Seafood</span>
                         </a>
-                        <a class="navbar-brand" href="#">
-                            <p>億家海鮮 Yi Jia Seafood</p>
+                        <a href="about.html">ABOUT</a>
+                        <a href="menu.html">MENU</a>
+                        <a href="award.html">AWARD</a>
+                        <a href="branch.html">BRANCH</a>
+                        <a href="career.html">CAREER</a>
+                        <a href="contact.html">CONTACT</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
                         </a>
                     </div>
-                        
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active"> <!--Nav Bar Item-->
-                                <a class="nav-link" href="#">About
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Award</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Branch</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Career</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+            
+                    <script>
+                        function myFunction() {
+                          var x = document.getElementById("myTopnav");
+                          if (x.className === "topnav") {
+                            x.className += " responsivenav";
+                          } else {
+                            x.className = "topnav";
+                          }
+                        }
+                    </script>
                 </div>
-            </nav>
-            <div class="header">
                 <div class="header-container"><!--HEADER IMAGE AND TEXT-->
                     <div class="row justify-content-center">
                         <div class="col-md-5"></div>
-                        <div class="col-md-7 ">
+                        <div class="col-md-7">
                             <h2 class="header-title text-right text-white pb-2 mbr-bold display-1">Fresh ingredients, sincere service;<br> comfort environment, innovative style.</h2>
                             <h5 class="text-right text-white pb-3 display-2 header-text">
                                 —Yi Jia Seafood
@@ -344,19 +76,20 @@
             </div><!--End Of Header-->
             <div class="container">
                 <section class="about row"><!--Briefly Explain 'About YiJia'-->
-                    <div class="col-md-6 text-right">
-                        <img src="chairman_GeorgeGuo.jpg" alt="George Guo_chairman">
+                    <div class="col-md-6 text-right px-3">
+                        <img src="founderYijia.png" alt="George Guo_chairman">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 pt-4">
                         <h3>
                             Where it all started
                         </h3>
-                        <p class="about-text">This is just your typical Boy meets Girl, Boy falls in love with girl, Boy joins forces as master entrepreneur and master restaurateur to create South Africa's most loved eatery Story. Their vision was to build a restaurant that would serve the most mouthwatering Italian inspired meals made with love and the finest, freshest ingredients.</p>
-                        <p class="about-text">With artisanal wood-fired pizzas, sumptuous pastas and gourmet salads, it was not long before the Col'Cacchio magic spread far and wide. And now, 28 years later, with restaurants all over the country, the mention of Col'Cacchio sends taste buds into a wild frenzy. It's more than a menu. It's a celebration. A journey. A story of 28 years in the making, of love, passion, adventure and loads of pizza.</p>
+                        <p class="about-text">Yijia Seafood is reflected in the combination of local ingredients, to improved and maintain Chinese culture cuisine.</p>
+                        <p class="about-text">“YiJia” represents “billions of family” hence we treat every of our customer in our restaurant our very own family. With trust and respect, and the joy of mouthful delicacies to be enjoy.</p>
                         <a class="btn link-btn" href="#" role="button">Learn More</a>
                     </div>
                 </section><!--End of About section-->
-
+            </div>
+            <div>
                 <section class="top-menu"><!--Top Menu shown by Sliding Image-->
                     <div id="sliding-popular-menu" class="carousel slide" data-ride="carousel">
                         <h3>YIJIA SEAFOOD BEST</h3>
@@ -414,8 +147,9 @@
                         </a>
                       </div>
                 </section><!--End of Top Menu-->
+            </div>
                 <section class="promotion py-3"> <!--Promotion slide-->
-                    <h3 style="font-family: 'Sentinel SSm A','Sentinel SSm B'; text-align: center; color: white;font-size: 2rem;">Promotion</h3>
+                    <h3 style="font-family: LibreBaskerville-Bold; text-align: center; color: #2d3e50;font-size: 2rem;">Promotion</h3>
                     <div id="promotion-gallery" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner d-block">
                             <!--Every page with 3 images-->
@@ -452,26 +186,30 @@
                             <h3>Follow Us</h3>
                         </div>
                         <!--Link to Facebook Page-->
-                        <a target="_blank" href="https://www.facebook.com/yijiaseafood/?ref=page_internal"><img src="facebook.png"></a>
+                        <a target="_blank" href="https://www.facebook.com/yijiaseafood/?ref=page_internal"><img src="facebook-dark.png"></a>
                     </div>
 
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12" style="padding-right: 2em;padding-left: 0px;">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12" >
                         <div class="follow">
                             <h3>Newsletter</h3>
                         </div>
                         <!--Prompt viewer to enter E-mail & subscribe-->
                         <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
                         <button class="Subscribe">Subscribe</button>
+                        <br>
                         <!--Checkbox for not willing to receive emails-->
                         <input type="checkbox" id="newsletter-subscribe" name="subscribe" value="agree">
                         <label for="vehicle1"> I don't want to receive emails about news or special offers.</label><br>
                     </div>
                 </section>
             </div>
-            <footer class="text-white text-lg-start" style="background-image: linear-gradient(to bottom, #630b0b,#930d0d);">
+            <audio controls loop autoplay id="bg-music">
+                <source src="Yijia Malaysia 2020.m4a" type="audio/mpeg">
+            </audio>
+            <footer class="text-white text-lg-start">
                 <div class="footer">
                     <div style="display:inline-flex;">
-                        <img src="footer_logo.png" alt="footer-logo" style="height: 42px;width: auto;">
+                        <img class="footer-logo" src="footer_logo.png" alt="footer-logo" style="height: 42px;width: auto;">
                     </div>
                     <div class="copyright">
                         <a target="_blank" href="https://www.facebook.com/yijiaseafood/?ref=page_internal"><img src="facebook.png" style="height: auto;width: 30px;"></a>
@@ -480,7 +218,7 @@
                 </div>
             </footer>
         </div>
-    </div>
-    <script src="back2Top.js"></script> <!--JS link for 'back to top' button-->
+    
+    <script src="yijia.js"></script> <!--JS link for 'back to top' button-->
 </body>
 </html>
